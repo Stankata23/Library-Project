@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import Horror from '../assets/Horror.png';
+import Fantasy from '../assets/Fantasy.png'
 import '../index.css'
 
 
@@ -15,7 +16,7 @@ export default function Genres(){
         </div>
         <div>       
             <Link to='/horror'> <img src={Horror} alt="Horror genre" /> </Link>
-            <Link to="/horror"><img src={Horror} alt="Horror genre" /> </Link>
+            <Link to="/horror"><img src={Fantasy} alt="Fantasy Genre" /> </Link>
              <Link to="/horror"><img src={Horror} alt="Horror genre" /> </Link>
             <Link to="/horror"><img src={Horror} alt="Horror genre" /> </Link>
         </div>
