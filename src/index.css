@@ -55,9 +55,8 @@ button:focus-visible {
 }
 
 img{
-  margin-right: 0.5rem;
-  margin-top: 5rem;
-  width: 200px;
+  margin-right: 0.2rem;
+  width: 12rem;
   height: auto;
   transition: transform 0.3s ease-in-out; 
 }
