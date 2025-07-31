@@ -1,3 +1,4 @@
+
 :root {
  
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -12,7 +13,26 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
+
+
+/* default (light) */
+body {
+  
+ background-color: #00000000;
+  color: #eee;
+ transition: background-color 0.9s ease-in-out, color 0.3s ease;
+}
+
+/* dark mode */
+.theme-light body {
+background-color: #FDFDFFEF;
+  color: #111;
+ transition: background-color 0.9s ease-in-out, color 0.3s ease;
+
+}
+
 
 a {
   font-weight: 500;
