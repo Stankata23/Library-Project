@@ -5,7 +5,7 @@ import Fantasy from '../assets/Fantasy.png'
 import SciFi from '../assets/SCI-FI.png'
 import CriminalFiction from '../assets/CriminalFiction.png'
 import Romantasy from '../assets/Romantasy.png'
-import '../index.css'
+import '../Pages/CSS/Genres.css'
 
 
 
@@ -15,7 +15,7 @@ export default function Genres(){
     return(
         <>
         
-        <div>
+        <div id="root">
             <h1>Genres</h1>
         </div>
         <br />
