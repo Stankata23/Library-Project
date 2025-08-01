@@ -17,21 +17,22 @@
 }
 
 
-/* default (light) */
 body {
   
  background-color: #00000000;
-  color: #eee;
+color: #eee;
  transition: background-color 0.9s ease-in-out, color 0.3s ease;
 }
 
-/* dark mode */
+
 .theme-light body {
 background-color: #FDFDFFEF;
-  color: #111;
- transition: background-color 0.9s ease-in-out, color 0.3s ease;
+color: #111;
+transition: background-color 0.9s ease-in-out, color 0.3s ease;
 
 }
+
+
 
 
 a {
@@ -75,7 +76,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-img{
+.img-card{
   margin-right: 0.2rem;
   width: 12rem;
   height: auto;
