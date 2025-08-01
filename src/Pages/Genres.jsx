@@ -21,11 +21,11 @@ export default function Genres(){
         <br />
         <br />
         <div>       
-            <Link to='/horror'> <img src={Horror} alt="Horror genre" /> </Link>
-            <Link to="/horror"><img src={Fantasy} alt="Fantasy Genre" /> </Link>
-             <Link to="/horror"><img src={SciFi} alt="Horror genre" /> </Link>
-            <Link to="/horror"><img src={CriminalFiction} alt="Horror genre" /> </Link>
-            <Link to="/horror"><img src={Romantasy} alt="Horror genre" /> </Link>
+            <Link to='/horror'> <img class= "img-card" src={Horror} alt="Horror genre" /> </Link>
+            <Link to="/horror"><img class= "img-card" src={Fantasy} alt="Fantasy Genre" /> </Link>
+             <Link to="/horror"><img class= "img-card" src={SciFi} alt="Horror genre" /> </Link>
+            <Link to="/horror"><img class= "img-card" src={CriminalFiction} alt="Horror genre" /> </Link>
+            <Link to="/horror"><img class= "img-card" src={Romantasy} alt="Horror genre" /> </Link>
         
         </div>
         <br />

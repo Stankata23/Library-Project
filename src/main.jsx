@@ -12,9 +12,16 @@ import '@radix-ui/themes/styles.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+<<<<<<< HEAD
      <Theme>
     <App/>
     </Theme>
     </StrictMode>
 )
+=======
+    <App/>
+    </StrictMode>
+)
+
+>>>>>>> 44122c5f4a3664771828f7970fb0b6058af0a213
   
