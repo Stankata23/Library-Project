@@ -7,7 +7,7 @@ import CriminalFiction from '../assets/CriminalFiction.png'
 import Romantasy from '../assets/Romantasy.png'
 import '../Pages/CSS/Genres.css'
 
-
+import { ThemeToggleButton } from '../DarkTheme/ToggleButton';
 
 export default function Genres(){
 
@@ -20,7 +20,8 @@ export default function Genres(){
         </div>
         <br />
         <br />
-        <div>       
+        <div>
+        <ThemeToggleButton />
             <Link to='/horror'> <img class= "img-card" src={Horror} alt="Horror genre" /> </Link>
             <Link to="/horror"><img class= "img-card" src={Fantasy} alt="Fantasy Genre" /> </Link>
              <Link to="/horror"><img class= "img-card" src={SciFi} alt="Horror genre" /> </Link>
