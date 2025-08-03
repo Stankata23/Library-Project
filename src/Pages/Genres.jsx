@@ -14,14 +14,14 @@ export default function Genres(){
    
     return(
         <>
-        
-        <div id="root">
+    
+        <br />
+        <br />
+        <div>
             <h1>Genres</h1>
         </div>
-        <br />
-        <br />
         <ThemeToggleButton />
-        <div>
+        <div className='cardLinks'>
         
             <Link to='/horror'> <img class= "img-card" src={Horror} alt="Horror genre" /> </Link>
             <Link to="/horror"><img class= "img-card" src={Fantasy} alt="Fantasy Genre" /> </Link>
@@ -32,9 +32,7 @@ export default function Genres(){
         </div>
         <br />
         <br />
-        <div>
-            <Link to="/">Go back</Link>
-        </div>
+    
         </>
     )
 }
