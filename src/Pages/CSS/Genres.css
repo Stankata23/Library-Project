@@ -62,6 +62,7 @@ img {
   width: 12rem;
   height: auto;
   transition: transform 0.3s ease-in-out;
+  
 }
 
 img:hover {
@@ -77,6 +78,7 @@ h1 {
 .cardLinks {
   justify-content: center;
   text-align: center;
+ 
 }
 
 @media (prefers-color-scheme: light) {

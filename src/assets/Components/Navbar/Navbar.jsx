@@ -9,7 +9,7 @@ import logo from '../../../Images/Mystic-Archives-Logo.png'
 const Navbar = () => {
     return (
         <nav className='container'>
-            <ul       
+            <ul>
               <li><a href="./BookManager" className='nav-link'>Каталог</a></li>
                 <li><a href="./Genres">Жанрове</a></li>
             </ul>
