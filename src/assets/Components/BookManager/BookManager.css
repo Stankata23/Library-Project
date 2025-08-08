@@ -1,0 +1,18 @@
+.book-manager {
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.book-manager input {
+    margin: 5px;
+    padding: 8px;
+}
+
+.book-manager button {
+    margin: 5px;
+    padding: 8px 16px;
+}

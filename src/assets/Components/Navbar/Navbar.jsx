@@ -9,15 +9,15 @@ import logo from '../../../Images/Mystic-Archives-Logo.png'
 const Navbar = () => {
     return (
         <nav className='container'>
-            <ul>
-                <li></li>
-                <li><a href="">Каталог</a></li>
+            <ul       
+              <li><a href="./BookManager" className='nav-link'>Каталог</a></li>
                 <li><a href="./Genres">Жанрове</a></li>
             </ul>
           <a href="/"><img src={logo} alt="" className="image_logo" /></a>
+
             <ul>
-                <li><a href="">Автори</a></li>
-                <li><a href="">Новини</a></li>
+                <li><a href="" className='nav-link'>Автори</a></li>
+                <li><a href="" className='nav-link'>Новини</a></li>
             </ul>
         </nav>
     )

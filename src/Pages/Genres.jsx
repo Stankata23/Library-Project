@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import Horror from '../assets/Horror.png';
 import Fantasy from '../assets/Fantasy.png'
@@ -9,11 +8,12 @@ import '../Pages/CSS/Genres.css'
 
 import { ThemeToggleButton } from '../DarkTheme/ToggleButton';
 
-export default function Genres(){
+export default function Genres() {
 
-   
-    return(
+
+    return (
         <>
+
     
         <br />
         <br />
@@ -34,6 +34,7 @@ export default function Genres(){
         <br />
         <br />
     
+
         </>
     )
 }
