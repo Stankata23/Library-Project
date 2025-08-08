@@ -10,7 +10,7 @@ export function ThemeToggleButton() {
   return (
     <div className='theme-toggle-fixed'>
     <Button onClick={toggleTheme} variant="soft">
-      {appearance === 'dark' ? <SunIcon /> : <MoonIcon />}
+      {appearance === 'dark' ? <MoonIcon /> : <SunIcon />}
     </Button>
     </div>
   );
