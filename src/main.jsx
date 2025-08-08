@@ -3,20 +3,16 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import "@radix-ui/themes/styles.css";
+import BookManager from './assets/Components/BookManager/BookManager';
 
 import { ThemeProvider } from './DarkTheme/ThemeProvider.jsx';
-
-
-
-
-import '@radix-ui/themes/styles.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
      <ThemeProvider>
-    <App/>
-    </ThemeProvider>
+        <App/>
+      </ThemeProvider>
     </StrictMode>
 )
 

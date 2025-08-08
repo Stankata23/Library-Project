@@ -7,7 +7,7 @@
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .hero-text {
@@ -24,4 +24,14 @@
     max-width: 700px;
     margin: 10px auto 20px;
     line-height: 1.4;
+}
+.hero-text .btn-down {
+    position: absolute;
+    bottom: 20%;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;  
+    color: #fff;
+    cursor: pointer;
 }

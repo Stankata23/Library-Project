@@ -6,13 +6,13 @@ const Navbar = () => {
     return (
         <nav className='container'>
             <ul>
-                <li><a href="">Каталог</a></li>
-                <li><a href="">Жанрове</a></li>
+                <li><a href="../BookManager/BookManager.jsx" className='nav-link'>Каталог</a></li>
+                <li><a href="" className='nav-link'>Жанрове</a></li>
             </ul>
-            <img src={logo} alt="" className="image_logo" />
+            <a href="/"><img src={logo} alt="" className="image_logo" /></a>
             <ul>
-                <li><a href="">Автори</a></li>
-                <li><a href="">Новини</a></li>
+                <li><a href="" className='nav-link'>Автори</a></li>
+                <li><a href="" className='nav-link'>Новини</a></li>
             </ul>
         </nav>
     )
