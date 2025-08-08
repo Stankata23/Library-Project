@@ -18,7 +18,8 @@ export default function Genres(){
         <br />
         <br />
         <div>
-            <h1>Genres</h1>
+            <h1>Жанрове</h1>    
+            
         </div>
         <ThemeToggleButton />
         <div className='cardLinks'>
