@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Flex, Text, Button } from "@radix-ui/themes";
+import { useState } from 'react';
+import './App.css';
 import Navbar from './assets/Components/Navbar/Navbar';
 import Hero from './assets/Components/Hero/Hero';
+import Footer from './assets/Components/Footer/Footer';
+import BookManager from './assets/Components/BookManager/BookManager';
+
 
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
+      <Footer/>
     </>
   )
 }
