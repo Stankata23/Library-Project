@@ -4,6 +4,14 @@ import './Hero.css'
 import { ArrowRightIcon } from "@radix-ui/react-icons"
 import { useNavigate } from 'react-router-dom';
 
+
+import Slideshow from '../SlideshowCard/Slideshow';
+
+import first from '../SlideshowCard/Pics/First.jpg'
+import second from '../SlideshowCard/Pics/Second.jpg'
+import third from '../SlideshowCard/Pics/Third.jpg'
+
+
 const Hero = () => {
 
     const navigate = useNavigate()
@@ -13,15 +21,24 @@ const Hero = () => {
 
 
         return (
-            <div className='hero container'>
-                <div className="hero-text">
-                    <h1>Най-Яката Книжарница</h1>
-                    <p>Където въображението е единственият лимит</p>
+    <div className='hero container'>
+    <div className="hero-text">
 
-                    <button onClick={goToGenres} className='btn'>Разгледай жанровете <ArrowRightIcon /></button>
+    {/* SlideShow starts here*/}
+    <div className="centered-container">     
+    <Slideshow
+        images={[
+          first, second, third
+        ]}
+        title= "Най-яката книжарница"
+        description="Където въображението е единственият лимит"
+      />
+      </div> 
+      {/* SlideShow ends here */}
+    <button onClick={goToGenres} className='btn'>Разгледай жанровете <ArrowRightIcon /></button>
 
-                </div>
-            </div>
+</div>
+</div>
 
         )
 }

@@ -35,3 +35,11 @@
     color: #fff;
     cursor: pointer;
 }
+
+.centered-container{
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  padding: 20px;
+  min-height: 50vh; 
+}
