@@ -2,7 +2,7 @@
 import React from 'react'
 import './Hero.css'
 import { ArrowRightIcon } from "@radix-ui/react-icons"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 
 
 import Slideshow from '../SlideshowCard/Slideshow';
@@ -17,8 +17,6 @@ const Hero = () => {
     const navigate = useNavigate()
 
     const goToGenres = () => navigate('/genres')
-
-
 
         return (
     <div className='hero container'>
@@ -40,7 +38,8 @@ const Hero = () => {
 </div>
 </div>
 
-        )
+
+    )
 }
 
 export default Hero
