@@ -47,9 +47,9 @@ function BookManager() {
     };
 
     return (
-        
+        <>
         <div className="book-manager">
-               <ThemeToggleButton />
+               
             <h2>Управление на книги</h2>
 
             <input
@@ -70,6 +70,7 @@ function BookManager() {
                 {formData.id !== null ? 'Обнови книга' : 'Добави книга'}
             </button>
 
+       
             <ul>
                 {books.map((book) => (
                     <li key={book.id}>
@@ -79,7 +80,11 @@ function BookManager() {
                     </li>
                 ))}
             </ul>
+
+
         </div>
+        
+            </>
     );
 }
 
