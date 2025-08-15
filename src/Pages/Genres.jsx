@@ -22,7 +22,7 @@ export default function Genres() {
             <ThemeToggleButton />
             <div className='cardLinks'>
 
-                <Link to='/horror'> <img class="img-card" src={Horror} alt="Horror genre" /> </Link>
+                <Link to='/horror'><img class="img-card" src={Horror} alt="Horror genre" /> </Link>
                 <Link to="/horror"><img class="img-card" src={Fantasy} alt="Fantasy Genre" /> </Link>
                 <Link to="/horror"><img class="img-card" src={SciFi} alt="Horror genre" /> </Link>
                 <Link to="/horror"><img class="img-card" src={CriminalFiction} alt="Horror genre" /> </Link>

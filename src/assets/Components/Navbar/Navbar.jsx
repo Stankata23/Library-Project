@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className='container'>
             <ul>
                 <li><a href="./BookManager" className='nav-link'>Каталог</a></li>
-                <li><a href="" className='nav-link'>Жанрове</a></li>
+                <li><a href="../../../Pages/Genres.jsx" className='nav-link'>Жанрове</a></li>
             </ul>
             <a href="/"><img src={logo} alt="" className="image_logo" /></a>
             <ul>
