@@ -1,6 +1,10 @@
 import './BookManager.css'
 import React, { useState } from 'react'
 
+import { ThemeToggleButton } from '../../../DarkTheme/ToggleButton';
+
+
+
 function BookManager() {
     const [books, setBooks] = useState([]);
     const [formData, setFormData] = useState({
@@ -43,7 +47,9 @@ function BookManager() {
     };
 
     return (
+        
         <div className="book-manager">
+               <ThemeToggleButton />
             <h2>Управление на книги</h2>
 
             <input

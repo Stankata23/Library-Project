@@ -6,11 +6,15 @@ import "@radix-ui/themes/styles.css"
 
 import { ThemeProvider } from './DarkTheme/ThemeProvider.jsx';
 
+
+
+import '@radix-ui/themes/styles.css';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
-    <ThemeProvider>
-      <App />
+
+     <ThemeProvider>
+    <App/>
     </ThemeProvider>
   </StrictMode>
 )
