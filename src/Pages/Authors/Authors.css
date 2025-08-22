@@ -1,0 +1,148 @@
+/* Външен контейнер – центрира всичко */
+
+
+
+
+.authors-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  /* центрира по вертикала */
+  position: relative;
+
+
+ 
+}
+
+/* Самата карта */
+.author-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,5);
+  position: relative;
+}
+
+
+
+/* Бутоните – абсолютно спрямо author-card */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border: none;
+  z-index: 2;
+}
+
+.nav-button.left {
+  left: -2.5rem; /* измества го извън картата */
+}
+
+
+
+.nav-button.right {
+  right: -2.5rem;
+}
+
+.nav-button.right:focus{
+  transition: 1.3s;
+}
+
+/* Снимката на автора */
+.author-image img {
+  border-radius: 0.5rem;
+  width: 240px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Текстовете */
+.author-content {
+  text-align: center;
+}
+
+.author-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.author-content p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.books h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+
+}
+
+.books {
+  display: flex;
+  gap: 20px;          /* разстояние между книгите */
+  justify-content: center; 
+}
+
+.book-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+
+   flex-direction: column;
+   width: 150px; 
+}
+
+.book-item img {
+  /* width: 64px;
+  height: 96px;
+  border-radius: 0.25rem;
+  object-fit: cover; */
+  margin-top: 2rem;
+  width: 64px;   /* еднаква ширина за всички корици */
+  height: 96px;  /* еднаква височина */
+  object-fit: cover;  /* запазва пропорциите и изрязва ако трябва */
+  margin-bottom: 8px;
+   
+}
+
+
+.book-item span {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
+.more-btn{
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  
+}
+
+.more-btn:focus{
+  outline: none;
+}
+
+.more-btn:hover{
+  color: #de4242;
+
+}
+

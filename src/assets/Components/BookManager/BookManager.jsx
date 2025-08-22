@@ -83,6 +83,7 @@ function BookManager({ ganre }) {
                 {formData.id !== null ? 'Обнови книга' : 'Добави книга'}
             </button>
 
+       
             <ul>
                 {books.map((book) => (
                     <li key={book.id}>
@@ -93,7 +94,11 @@ function BookManager({ ganre }) {
                     </li>
                 ))}
             </ul>
+
+
         </div>
+        
+            </>
     );
 }
 
