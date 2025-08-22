@@ -101,8 +101,10 @@ export default function AuthorsTemplate()
         <button className="more-btn">Виж повече</button>
     
         {/* Книги */}
+        <div>
+        <h3>Избрани заглавия</h3>
         <div className="books">
-          <h3>Избрани заглавия</h3>
+          
           {author.books.map((book, i) => (
             <div key={i} className="book-item">
               <img src={book.cover} alt={book.title} />
@@ -110,6 +112,7 @@ export default function AuthorsTemplate()
             </div>
           ))}
         </div>
+      </div>
       </div>
     </div>
   </div>

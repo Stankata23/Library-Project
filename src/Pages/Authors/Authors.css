@@ -1,15 +1,6 @@
 /* Външен контейнер – центрира всичко */
 
 
-body {
-  background-image: url("../../Images/Luthadel.png");
-  background-size: cover;   /* изпълва екрана */
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-
 
 
 .authors-container {
@@ -93,6 +84,16 @@ body {
 .books h3 {
   font-weight: 600;
   margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+
+}
+
+.books {
+  display: flex;
+  gap: 20px;          /* разстояние между книгите */
+  justify-content: center; 
 }
 
 .book-item {
@@ -101,14 +102,31 @@ body {
   gap: 0.5rem;
   margin-bottom: 0.5rem;
   justify-content: center;
+
+   flex-direction: column;
+   width: 150px; 
 }
 
 .book-item img {
-  width: 64px;
+  /* width: 64px;
   height: 96px;
   border-radius: 0.25rem;
-  object-fit: cover;
+  object-fit: cover; */
+  margin-top: 2rem;
+  width: 64px;   /* еднаква ширина за всички корици */
+  height: 96px;  /* еднаква височина */
+  object-fit: cover;  /* запазва пропорциите и изрязва ако трябва */
+  margin-bottom: 8px;
+   
 }
+
+
+.book-item span {
+  text-align: center;
+  font-size: 14px;
+}
+
+
 
 .more-btn{
   background: none;
