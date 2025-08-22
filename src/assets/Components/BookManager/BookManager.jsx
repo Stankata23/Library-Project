@@ -98,7 +98,7 @@ function BookManager({ ganre }) {
 
         </div>
         
-            </>
+        
     );
 }
 
