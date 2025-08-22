@@ -50,6 +50,7 @@ a {
 
 button:hover {
   border-color: #646cff;
+  
 }
 
 button:focus,
@@ -62,11 +63,16 @@ button:focus-visible {
   width: 12rem;
   height: auto;
   transition: transform 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
   
 }
 
 .img-card:hover {
+
   transform: scale(1.3);
+  z-index: 10;
+  
 } 
 
 h1 {
@@ -78,6 +84,7 @@ h1 {
 .cardLinks {
   justify-content: center;
   text-align: center;
+  z-index: 1;
  
 }
 

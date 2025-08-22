@@ -16,7 +16,7 @@ const Navbar = () => {
             </ul>
           <a href="/"><img src={logo} alt="" className="image_logo" /></a>
             <ul>
-                <li><a href="" className='nav-link'>Автори</a></li>
+                <li><a href="./Authors" className='nav-link'>Автори</a></li>
                 <li><a href="" className='nav-link'>Новини</a></li>
             </ul>
         </nav>
