@@ -105,6 +105,8 @@
 
    flex-direction: column;
    width: 150px; 
+
+    flex-wrap: wrap;  
 }
 
 .book-item img {
@@ -146,3 +148,18 @@
 
 }
 
+@media (max-width: 768px) {
+  .author-card {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .author-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .book-item {
+    width: 100px;
+  }
+}
