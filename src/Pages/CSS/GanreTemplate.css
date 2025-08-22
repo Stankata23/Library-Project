@@ -1,0 +1,16 @@
+.ganre-template {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.ganre-header {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.ganre-content {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}

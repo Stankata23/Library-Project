@@ -5,12 +5,13 @@ import { ThemeToggleButton } from '../../../DarkTheme/ToggleButton';
 
 
 
-function BookManager() {
+function BookManager({ ganre }) {
     const [books, setBooks] = useState([]);
     const [formData, setFormData] = useState({
         id: null,
         title: '',
         author: '',
+        ganre: '',
     });
 
     const handleChange = (e) => {
@@ -35,7 +36,7 @@ function BookManager() {
         }
 
         // Reset form
-        setFormData({ id: null, title: '', author: '' });
+        setFormData({ id: null, title: '', author: '', genre: '' });
     };
 
     const handleEdit = (book) => {
@@ -47,10 +48,10 @@ function BookManager() {
     };
 
     return (
-        <>
+
         <div className="book-manager">
-               
-            <h2>Управление на книги</h2>
+
+            <h2>Управление на книги {ganre}</h2>
 
             <input
                 type="text"
@@ -66,6 +67,18 @@ function BookManager() {
                 value={formData.author}
                 onChange={handleChange}
             />
+            <select
+                name="genre"
+                value={formData.genre}
+                onChange={handleChange}
+            >
+                <option value="">-- Избери жанр --</option>
+                <option value="Хорър">Хорър</option>
+                <option value="Фентъзи">Фентъзи</option>
+                <option value="Научна фантастика">Научна фантастика</option>
+                <option value="Криминални">Криминални</option>
+                <option value="Романтика">Романтика</option>
+            </select>
             <button onClick={handleAddOrUpdate}>
                 {formData.id !== null ? 'Обнови книга' : 'Добави книга'}
             </button>
@@ -75,6 +88,7 @@ function BookManager() {
                 {books.map((book) => (
                     <li key={book.id}>
                         <strong>{book.title}</strong> от {book.author}{' '}
+                        {book.genre && <em> ({book.genre})</em>}
                         <button onClick={() => handleEdit(book)}>Редактирай</button>
                         <button onClick={() => handleDelete(book.id)}>Изтрий</button>
                     </li>
