@@ -148,6 +148,20 @@
 
 }
 
+
+@media (min-width: 1200px) {
+  .books {
+    grid-template-columns: repeat(4, 1fr); /* 4 книги на ред */
+  }
+}
+
+/* Средни екрани (таблети, ~768–1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .books {
+    grid-template-columns: repeat(2, 1fr); /* 2 книги на ред */
+  }
+}
+
 @media (max-width: 768px) {
   .author-card {
     flex-direction: column;
